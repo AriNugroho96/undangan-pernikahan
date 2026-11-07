@@ -12,9 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- Tone.js for subtle ambient wedding chime/music -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"></script>
-
     <script>
         tailwind.config = {
             theme: {
@@ -143,19 +140,19 @@
         <button id="btn-view-mobile" onclick="setViewMode('mobile')" class="px-3 py-1.5 rounded-full text-xs font-semibold text-sage-700 hover:bg-sage-100 transition flex items-center gap-1.5">
             <i class="fa-solid fa-mobile-screen-button"></i> Simulasi HP
         </button>
-        <button onclick="openGuestModal()" title="Ubah Nama Tamu" class="p-1.5 rounded-full text-gold-600 hover:bg-gold-100 transition">
+        <!--<button onclick="openGuestModal()" title="Ubah Nama Tamu" class="p-1.5 rounded-full text-gold-600 hover:bg-gold-100 transition">
             <i class="fa-solid fa-user-pen"></i>
-        </button>
+        </button>-->
     </div>
 
     <!-- ================= 1. COVER / LOCK SCREEN OVERLAY ================= -->
     <div id="cover-overlay" class="fixed inset-0 z-[100] flex flex-col justify-between items-center text-center p-6 text-white overflow-hidden">
         <!-- Background Photo with Dark Romantic Gradient -->
         <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1600&q=80" 
+            <img src="koran.jpg" 
                  alt="Wedding Cover" 
                  class="w-full h-full object-cover scale-105 transition-transform duration-1000"
-                 onerror="this.src='https://placehold.co/1200x800/364936/ffffff?text=Alya+%26+Reza'">
+                 onerror="this.src='https://placehold.co/1200x800/364936/ffffff?text=Annisa+%26+Ari'">
             <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-sage-900/50 to-sage-900/90"></div>
         </div>
 
@@ -167,22 +164,22 @@
         <!-- Center Couple Info -->
         <div class="relative z-10 my-auto max-w-md px-4">
             <div class="w-28 h-28 md:w-36 md:h-36 mx-auto mb-6 rounded-full p-1.5 border-2 border-gold-300/70 shadow-2xl overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=600&q=80" 
-                     alt="Alya & Reza" 
+                <img src="koran.jpg" 
+                     alt="Annisa & Ari" 
                      class="w-full h-full object-cover rounded-full"
-                     onerror="this.src='https://placehold.co/300x300/537353/ffffff?text=A+%26+R'">
+                     onerror="this.src='https://placehold.co/300x300/537353/ffffff?text=Annisa+%26+Ari'">
             </div>
-            <h1 class="font-script text-5xl md:text-7xl text-gold-100 drop-shadow-md mb-2">Alya & Reza</h1>
-            <p class="font-serif italic text-lg md:text-xl text-gray-200 tracking-wide">Sabtu, 12 Desember 2026</p>
+            <h1 class="font-script text-5xl md:text-7xl text-gold-100 drop-shadow-md mb-2">Annisa & Ari</h1>
+            <p class="font-serif italic text-lg md:text-xl text-gray-200 tracking-wide">Minggu, 20 Desember 2026</p>
 
             <!-- Guest Name Box -->
             <div class="mt-8 bg-white/10 backdrop-blur-md border border-white/25 rounded-2xl p-5 shadow-xl">
                 <p class="text-xs uppercase tracking-widest text-gold-300 mb-1">Kepada Yth. Bapak/Ibu/Saudara/i</p>
                 <div class="flex items-center justify-center gap-2 my-1">
                     <h2 id="guest-name-display" class="text-xl md:text-2xl font-serif font-bold text-white">Bapak Andi & Partner</h2>
-                    <button onclick="openGuestModal()" class="text-xs text-gold-300 hover:text-white underline" title="Edit Nama Tamu">
+                    <!--<button onclick="openGuestModal()" class="text-xs text-gold-300 hover:text-white underline" title="Edit Nama Tamu">
                         <i class="fa-solid fa-pen-to-square"></i>
-                    </button>
+                    </button>-->
                 </div>
                 <p class="text-[11px] text-gray-300 mt-1">Mohon maaf apabila terdapat kesalahan penulisan nama/gelar</p>
             </div>
@@ -196,7 +193,7 @@
 
         <!-- Footer Note -->
         <div class="relative z-10 pb-4 text-xs text-gray-300/80 tracking-wider">
-            #AlyaRezaSelamanya
+            #AnnisaAriSelamanya
         </div>
     </div>
 
@@ -205,10 +202,10 @@
 
         <!-- LEFT PANE: FIXED ROMANTIC SHOWCASE (Visible on Desktop Split View) -->
         <aside id="left-showcase" class="hidden lg:flex lg:w-7/12 xl:w-8/12 h-screen sticky top-0 relative items-end p-12 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1600&q=80" 
-                 alt="Alya & Reza Showcase" 
+            <img src="Memandang.jpg" 
+                 alt="Annisa & Ari Showcase" 
                  class="absolute inset-0 w-full h-full object-cover"
-                 onerror="this.src='https://placehold.co/1200x900/364936/ffffff?text=Alya+%26+Reza'">
+                 onerror="this.src='https://placehold.co/1200x900/364936/ffffff?text=Annisa+%26+Ari'">
             <div class="absolute inset-0 bg-gradient-to-t from-sage-900/90 via-sage-900/30 to-black/20"></div>
 
             <!-- Decorative Border Frame -->
@@ -218,13 +215,13 @@
                 <span class="inline-block px-4 py-1 rounded-full bg-gold-500/30 backdrop-blur-sm border border-gold-300/40 text-gold-100 text-xs uppercase tracking-widest mb-4">
                     Undangan Pernikahan
                 </span>
-                <h1 class="font-script text-7xl text-gold-100 mb-3">Alya & Reza</h1>
+                <h1 class="font-script text-7xl text-gold-100 mb-3">Annisa & Ari</h1>
                 <p class="font-serif italic text-xl text-gray-200 leading-relaxed mb-6">
                     "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya."
                 </p>
                 <div class="flex items-center gap-6 text-sm text-gold-300 font-medium tracking-wider uppercase">
-                    <span><i class="fa-regular fa-calendar mr-2"></i>Sabtu, 12 Des 2026</span>
-                    <span><i class="fa-solid fa-location-dot mr-2"></i>Jakarta Selatan</span>
+                    <span><i class="fa-regular fa-calendar mr-2"></i>Minggu, 20 Desember 2026</span>
+                    <span><i class="fa-solid fa-location-dot mr-2"></i>Klaten</span>
                 </div>
             </div>
         </aside>
@@ -241,17 +238,17 @@
 
                 <div class="relative z-10 w-full">
                     <p class="text-xs uppercase tracking-[0.3em] text-sage-600 font-semibold mb-2">The Wedding Of</p>
-                    <h2 class="font-script text-5xl sm:text-6xl text-sage-800 my-2">Alya & Reza</h2>
-                    <p class="font-serif italic text-sage-600 text-base">Sabtu, 12 Desember 2026</p>
+                    <h2 class="font-script text-5xl sm:text-6xl text-sage-800 my-2">Annisa & Ari</h2>
+                    <p class="font-serif italic text-sage-600 text-base">Minggu, 20 Desember 2026</p>
                 </div>
 
                 <!-- Arch Framed Couple Photo -->
                 <div class="relative my-6 w-64 sm:w-72 mx-auto">
                     <div class="arch-frame overflow-hidden border-4 border-gold-500/40 shadow-xl aspect-[3/4] bg-sage-100">
-                        <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=800&q=80" 
+                        <img src="koran.jpg" 
                              alt="Pasangan Mempelai" 
                              class="w-full h-full object-cover hover:scale-105 transition duration-700"
-                             onerror="this.src='https://placehold.co/600x800/537353/ffffff?text=Alya+%26+Reza'">
+                             onerror="this.src='https://placehold.co/600x800/537353/ffffff?text=Annisa+%26+Ari'">
                     </div>
                     <!-- Floating Badge -->
                     <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-white px-5 py-1.5 rounded-full shadow-md border border-gold-300 text-xs font-serif tracking-widest uppercase text-gold-700 whitespace-nowrap">
@@ -300,19 +297,19 @@
                     <!-- Bride Card -->
                     <div class="glass-card rounded-3xl p-6 shadow-md mb-6 relative overflow-hidden group">
                         <div class="w-32 h-32 mx-auto rounded-full p-1 border-2 border-gold-500 mb-4 overflow-hidden shadow-md">
-                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=80" 
-                                 alt="Alya Putri Maharani" 
+                            <img src="feminim2.jpg" 
+                                 alt="Annisa Lilih Sayekti Amd.Kep" 
                                  class="w-full h-full object-cover rounded-full group-hover:scale-110 transition duration-500"
-                                 onerror="this.src='https://placehold.co/300x300/c5a059/ffffff?text=Alya'">
+                                 onerror="this.src='https://placehold.co/300x300/c5a059/ffffff?text=Annisa'">
                         </div>
-                        <h3 class="font-script text-4xl text-sage-800 mb-1">Alya Putri Maharani, S.Ars</h3>
+                        <h3 class="font-script text-4xl text-sage-800 mb-1">Annisa Lilih Sayekti, Amd.Kep</h3>
                         <p class="text-xs font-semibold uppercase tracking-widest text-gold-600 mb-3">Mempelai Wanita</p>
                         <p class="text-xs text-sage-600 leading-relaxed">
-                            Putri Pertama dari<br>
-                            <strong class="text-sage-800">Bapak H. Hendra Wijaya & Ibu Hj. Siti Aminah</strong>
+                            Putri ke Empat dari<br>
+                            <strong class="text-sage-800">Bapak Sukino & Ibu Isnaini</strong>
                         </p>
-                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex items-center gap-1.5 text-xs text-sage-700 hover:text-gold-600 bg-sage-100 px-3.5 py-1.5 rounded-full transition">
-                            <i class="fa-brands fa-instagram"></i> @alyamaharani
+                        <a href="https://www.instagram.com/annisalilihsayekti/" target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex items-center gap-1.5 text-xs text-sage-700 hover:text-gold-600 bg-sage-100 px-3.5 py-1.5 rounded-full transition">
+                            <i class="fa-brands fa-instagram"></i> @annisalilihsayekti
                         </a>
                     </div>
 
@@ -321,19 +318,19 @@
                     <!-- Groom Card -->
                     <div class="glass-card rounded-3xl p-6 shadow-md relative overflow-hidden group">
                         <div class="w-32 h-32 mx-auto rounded-full p-1 border-2 border-gold-500 mb-4 overflow-hidden shadow-md">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80" 
-                                 alt="Reza Pratama Wijaya" 
+                            <img src="coll1.jpg" 
+                                 alt="Ari Nugroho Amd.Kom" 
                                  class="w-full h-full object-cover rounded-full group-hover:scale-110 transition duration-500"
-                                 onerror="this.src='https://placehold.co/300x300/537353/ffffff?text=Reza'">
+                                 onerror="this.src='https://placehold.co/300x300/537353/ffffff?text=Ari'">
                         </div>
-                        <h3 class="font-script text-4xl text-sage-800 mb-1">Reza Pratama Putra, B.Eng</h3>
+                        <h3 class="font-script text-4xl text-sage-800 mb-1">Ari Nugroho Amd.Kom</h3>
                         <p class="text-xs font-semibold uppercase tracking-widest text-gold-600 mb-3">Mempelai Pria</p>
                         <p class="text-xs text-sage-600 leading-relaxed">
-                            Putra Kedua dari<br>
-                            <strong class="text-sage-800">Bapak Ir. Budi Santoso & Ibu Dewi Lestari</strong>
+                            Putra Pertama dari<br>
+                            <strong class="text-sage-800">Bapak Sarito & Ibu Amini</strong>
                         </p>
-                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex items-center gap-1.5 text-xs text-sage-700 hover:text-gold-600 bg-sage-100 px-3.5 py-1.5 rounded-full transition">
-                            <i class="fa-brands fa-instagram"></i> @rezapratama
+                        <a href="https://www.instagram.com/ary0169/" target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex items-center gap-1.5 text-xs text-sage-700 hover:text-gold-600 bg-sage-100 px-3.5 py-1.5 rounded-full transition">
+                            <i class="fa-brands fa-instagram"></i> @ary0169
                         </a>
                     </div>
 
@@ -369,17 +366,17 @@
                         <div class="mt-4 space-y-2.5 text-xs sm:text-sm text-sage-700">
                             <div class="flex items-center gap-3">
                                 <i class="fa-regular fa-calendar text-gold-600 w-4 text-center"></i>
-                                <span class="font-medium">Sabtu, 12 Desember 2026</span>
+                                <span class="font-medium">Minggu, 20 Desember 2026</span>
                             </div>
                             <div class="flex items-center gap-3">
                                 <i class="fa-regular fa-clock text-gold-600 w-4 text-center"></i>
-                                <span>08.00 WIB – 10.00 WIB</span>
+                                <span>07.00 WIB – Selesai WIB</span>
                             </div>
                             <div class="flex items-start gap-3">
                                 <i class="fa-solid fa-location-dot text-gold-600 w-4 text-center mt-1"></i>
                                 <div>
-                                    <strong class="block text-sage-900">Glass House Plataran Senayan</strong>
-                                    <span class="text-xs text-sage-600">Jl. Pintu Satu Senayan, Gelora, Kecamatan Tanah Abang, Jakarta Pusat</span>
+                                    <strong class="block text-sage-900">Gedung Pringgodani</strong>
+                                    <span class="text-xs text-sage-600">dk Kuntulan, Kuntulan, Pandes, Kec. Wedi, Kabupaten Klaten, Jawa Tengah 57461</span>
                                 </div>
                             </div>
                         </div>
@@ -404,17 +401,17 @@
                         <div class="mt-4 space-y-2.5 text-xs sm:text-sm text-sage-700">
                             <div class="flex items-center gap-3">
                                 <i class="fa-regular fa-calendar text-gold-600 w-4 text-center"></i>
-                                <span class="font-medium">Sabtu, 12 Desember 2026</span>
+                                <span class="font-medium">Minggu, 20 Desember 2026</span>
                             </div>
                             <div class="flex items-center gap-3">
                                 <i class="fa-regular fa-clock text-gold-600 w-4 text-center"></i>
-                                <span>11.00 WIB – 14.00 WIB</span>
+                                <span>09.00 WIB – Selesai WIB</span>
                             </div>
                             <div class="flex items-start gap-3">
                                 <i class="fa-solid fa-location-dot text-gold-600 w-4 text-center mt-1"></i>
                                 <div>
-                                    <strong class="block text-sage-900">Grand Ballroom Hotel Mulia Senayan</strong>
-                                    <span class="text-xs text-sage-600">Jl. Asia Afrika, Senayan, Kec. Tanah Abang, Kota Jakarta Pusat</span>
+                                    <strong class="block text-sage-900">Gedung Pringgodani</strong>
+                                    <span class="text-xs text-sage-600">dk Kuntulan, Kuntulan, Pandes, Kec. Wedi, Kabupaten Klaten, Jawa Tengah 57461</span>
                                 </div>
                             </div>
                         </div>
@@ -438,20 +435,20 @@
                         <!-- Story 1 -->
                         <div class="relative">
                             <div class="absolute -left-[33px] top-1 w-4 h-4 rounded-full bg-gold-500 border-4 border-cream shadow"></div>
-                            <span class="text-[11px] font-bold uppercase tracking-wider text-gold-600">Mei 2023</span>
+                            <span class="text-[11px] font-bold uppercase tracking-wider text-gold-600">Mei 2009</span>
                             <h4 class="font-serif text-xl font-bold text-sage-800 mt-0.5">Pertama Bertemu</h4>
                             <p class="text-xs text-sage-600 mt-1 leading-relaxed">
-                                Berawal dari proyek kolaborasi arsitektur di Jakarta, percakapan singkat tentang desain berubah menjadi diskusi hangat yang tak terlupakan.
+                                Berawal dari awal pertama masuk SMP yang awalnya tidak kenal dan asing. Tapi akhirnya menjadi akrab sampai lulus SMP hingga di masa masa kuliah.
                             </p>
                         </div>
 
                         <!-- Story 2 -->
                         <div class="relative">
                             <div class="absolute -left-[33px] top-1 w-4 h-4 rounded-full bg-sage-600 border-4 border-cream shadow"></div>
-                            <span class="text-[11px] font-bold uppercase tracking-wider text-gold-600">Agustus 2025</span>
+                            <span class="text-[11px] font-bold uppercase tracking-wider text-gold-600">Oktober 2024</span>
                             <h4 class="font-serif text-xl font-bold text-sage-800 mt-0.5">Komitmen & Lamaran</h4>
                             <p class="text-xs text-sage-600 mt-1 leading-relaxed">
-                                Setelah dua tahun saling mengenal dan tumbuh bersama, Reza datang bersama keluarga besar untuk meminang Alya secara resmi.
+                                Setelah 15 tahun saling mengenal yang awalnya hanya teman biasa hingga akhirnya menjadi teman dekat, Ari datang bersama keluarga besar untuk meminang Annisa secara resmi.
                             </p>
                         </div>
 
@@ -475,32 +472,32 @@
                     <h2 class="font-serif text-3xl sm:text-4xl font-bold text-sage-800 mt-1 mb-8">Galeri Bahagia</h2>
 
                     <div class="grid grid-cols-2 gap-3">
-                        <div onclick="openLightbox('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1000&q=80', 'Momen Prewedding 1')" class="col-span-2 rounded-2xl overflow-hidden shadow-md cursor-pointer group aspect-video">
-                            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" 
+                        <div onclick="openLightbox('koran.jpg', 'Momen Prewedding 1')" class="col-span-2 rounded-2xl overflow-hidden shadow-md cursor-pointer group aspect-video">
+                            <img src="koran.jpg" 
                                  alt="Galeri 1" 
                                  class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
                                  onerror="this.src='https://placehold.co/800x450/537353/ffffff?text=Prewedding+1'">
                         </div>
-                        <div onclick="openLightbox('https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1000&q=80', 'Momen Prewedding 2')" class="rounded-2xl overflow-hidden shadow-md cursor-pointer group aspect-[4/5]">
-                            <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=600&q=80" 
+                        <div onclick="openLightbox('kuning.jpg', 'Momen Prewedding 2')" class="rounded-2xl overflow-hidden shadow-md cursor-pointer group aspect-[4/5]">
+                            <img src="kuning.jpg" 
                                  alt="Galeri 2" 
                                  class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
                                  onerror="this.src='https://placehold.co/500x600/364936/ffffff?text=Prewedding+2'">
                         </div>
-                        <div onclick="openLightbox('https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=1000&q=80', 'Momen Prewedding 3')" class="rounded-2xl overflow-hidden shadow-md cursor-pointer group aspect-[4/5]">
-                            <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=600&q=80" 
+                        <div onclick="openLightbox('Memandang.jpg', 'Momen Prewedding 3')" class="rounded-2xl overflow-hidden shadow-md cursor-pointer group aspect-[4/5]">
+                            <img src="Memandang.jpg" 
                                  alt="Galeri 3" 
                                  class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
                                  onerror="this.src='https://placehold.co/500x600/c5a059/ffffff?text=Prewedding+3'">
                         </div>
-                        <div onclick="openLightbox('https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=1000&q=80', 'Momen Prewedding 4')" class="rounded-2xl overflow-hidden shadow-md cursor-pointer group aspect-square">
-                            <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=600&q=80" 
+                        <div onclick="openLightbox('Tambah1.jpg', 'Momen Prewedding 4')" class="rounded-2xl overflow-hidden shadow-md cursor-pointer group aspect-square">
+                            <img src="Tambah1.jpg" 
                                  alt="Galeri 4" 
                                  class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
                                  onerror="this.src='https://placehold.co/500x500/537353/ffffff?text=Prewedding+4'">
                         </div>
-                        <div onclick="openLightbox('https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=1000&q=80', 'Momen Prewedding 5')" class="rounded-2xl overflow-hidden shadow-md cursor-pointer group aspect-square">
-                            <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=600&q=80" 
+                        <div onclick="openLightbox('Tambah2.jpg', 'Momen Prewedding 5')" class="rounded-2xl overflow-hidden shadow-md cursor-pointer group aspect-square">
+                             <img src="Tambah2.jpg" 
                                  alt="Galeri 5" 
                                  class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
                                  onerror="this.src='https://placehold.co/500x500/364936/ffffff?text=Prewedding+5'">
@@ -519,44 +516,44 @@
                     </p>
 
                     <div class="space-y-4 text-left">
-                        <!-- Bank BCA Card -->
+                        <!-- Bank MANDIRI Card -->
                         <div class="bg-gradient-to-br from-sage-800 to-sage-900 text-white rounded-2xl p-5 shadow-lg relative overflow-hidden">
                             <div class="flex justify-between items-center mb-4">
-                                <span class="font-bold tracking-wider text-lg text-gold-300">BANK BCA</span>
+                                <span class="font-bold tracking-wider text-lg text-gold-300">BANK MANDIRI</span>
                                 <i class="fa-solid fa-sim-card text-2xl text-gold-300/80"></i>
                             </div>
                             <p class="text-xs text-gray-300">Nomor Rekening</p>
                             <div class="flex items-center justify-between mt-1">
-                                <span id="rek-bca" class="font-mono text-lg sm:text-xl font-semibold tracking-widest">8720194821</span>
-                                <button onclick="copyText('8720194821', 'Nomor Rekening BCA')" class="bg-gold-500 hover:bg-gold-600 text-white text-xs px-3 py-1.5 rounded-lg transition flex items-center gap-1.5">
+                                <span id="rek-mandiri" class="font-mono text-lg sm:text-xl font-semibold tracking-widest">1380019937106</span>
+                                <button onclick="copyText('1380019937106', 'Nomor Rekening MANDIRI')" class="bg-gold-500 hover:bg-gold-600 text-white text-xs px-3 py-1.5 rounded-lg transition flex items-center gap-1.5">
                                     <i class="fa-regular fa-copy"></i> Salin
                                 </button>
                             </div>
-                            <p class="text-xs text-gray-300 mt-3">a.n. <strong class="text-white">Alya Putri Maharani</strong></p>
+                            <p class="text-xs text-gray-300 mt-3">a.n. <strong class="text-white">ANNISA LILIH SAYEKTI</strong></p>
                         </div>
 
                         <!-- Bank Mandiri Card -->
                         <div class="bg-gradient-to-br from-gold-600 to-gold-700 text-white rounded-2xl p-5 shadow-lg relative overflow-hidden">
                             <div class="flex justify-between items-center mb-4">
-                                <span class="font-bold tracking-wider text-lg text-white">BANK MANDIRI</span>
+                                <span class="font-bold tracking-wider text-lg text-white">BANK BRI</span>
                                 <i class="fa-solid fa-sim-card text-2xl text-white/80"></i>
                             </div>
                             <p class="text-xs text-gold-100">Nomor Rekening</p>
                             <div class="flex items-center justify-between mt-1">
-                                <span id="rek-mandiri" class="font-mono text-lg sm:text-xl font-semibold tracking-widest">1240098765432</span>
-                                <button onclick="copyText('1240098765432', 'Nomor Rekening Mandiri')" class="bg-sage-800 hover:bg-sage-900 text-white text-xs px-3 py-1.5 rounded-lg transition flex items-center gap-1.5">
+                                <span id="rek-bri" class="font-mono text-lg sm:text-xl font-semibold tracking-widest">673401024684534</span>
+                                <button onclick="copyText('673401024684534', 'Nomor Rekening BRI')" class="bg-sage-800 hover:bg-sage-900 text-white text-xs px-3 py-1.5 rounded-lg transition flex items-center gap-1.5">
                                     <i class="fa-regular fa-copy"></i> Salin
                                 </button>
                             </div>
-                            <p class="text-xs text-gold-100 mt-3">a.n. <strong class="text-white">Reza Pratama Putra</strong></p>
+                            <p class="text-xs text-gold-100 mt-3">a.n. <strong class="text-white">ARI NUGROHO</strong></p>
                         </div>
 
                         <!-- Kirim Kado Fisik -->
                         <div class="glass-card rounded-2xl p-5 text-center">
                             <i class="fa-solid fa-gift text-gold-600 text-xl mb-2"></i>
                             <h4 class="font-serif font-bold text-lg text-sage-800">Kirim Kado Fisik</h4>
-                            <p class="text-xs text-sage-600 mt-1">Jl. Kemang Raya No. 45, Bangka, Kec. Mampang Prapatan, Kota Jakarta Selatan 12730</p>
-                            <button onclick="copyText('Jl. Kemang Raya No. 45, Bangka, Kec. Mampang Prapatan, Kota Jakarta Selatan 12730', 'Alamat Pengiriman Kado')" class="mt-3 inline-flex items-center gap-1.5 text-xs font-semibold text-sage-700 hover:text-gold-600 underline">
+                            <p class="text-xs text-sage-600 mt-1">Glagah RT 011 / RW 005 Birit Wedi Klaten</p>
+                            <button onclick="copyText('Glagah RT 011 / RW 005 Birit Wedi Klaten', 'Alamat Pengiriman Kado')" class="mt-3 inline-flex items-center gap-1.5 text-xs font-semibold text-sage-700 hover:text-gold-600 underline">
                                 <i class="fa-regular fa-copy"></i> Salin Alamat Lengkap
                             </button>
                         </div>
@@ -622,8 +619,8 @@
                     <!-- Closing Footer -->
                     <div class="mt-14 text-center border-t border-sage-200 pt-8">
                         <p class="text-xs text-sage-600 mb-2">Kami yang berbahagia,</p>
-                        <h3 class="font-script text-4xl text-sage-800">Alya & Reza</h3>
-                        <p class="text-[11px] text-gray-400 mt-6">Dibuat dengan penuh cinta • Undangan Digital Modern 2026</p>
+                        <h3 class="font-script text-4xl text-sage-800">Annisa & Ari</h3>
+                        <p class="text-[11px] text-gray-400 mt-6">Matur nuwun sanget awit kawigatosan saha donga pangestu panjenengan.</p>
                     </div>
                 </div>
             </section>
@@ -690,10 +687,10 @@
             </div>
             <div class="rounded-2xl overflow-hidden bg-sage-100 h-56 flex flex-col items-center justify-center border border-sage-200 p-4 text-center">
                 <i class="fa-solid fa-map-location-dot text-4xl text-gold-600 mb-3"></i>
-                <p class="text-sm font-semibold text-sage-800">Gelora Bung Karno / Senayan Area</p>
-                <p class="text-xs text-sage-600 mt-1">Jl. Pintu Satu Senayan, Jakarta Pusat</p>
+                <p class="text-sm font-semibold text-sage-800">Gedung Pringgodani</p>
+                <p class="text-xs text-sage-600 mt-1">dk Kuntulan, Kuntulan, Pandes, Kec. Wedi, Kabupaten Klaten, Jawa Tengah 57461</p>
             </div>
-            <a href="https://maps.google.com/?q=Plataran+Senayan+Jakarta" target="_blank" rel="noopener noreferrer" class="mt-4 w-full py-3 rounded-xl bg-sage-700 hover:bg-sage-800 text-white text-xs font-semibold flex items-center justify-center gap-2 transition">
+            <a href="https://maps.app.goo.gl/tje2znQrpQM4x3Be7" target="_blank" rel="noopener noreferrer" class="mt-4 w-full py-3 rounded-xl bg-sage-700 hover:bg-sage-800 text-white text-xs font-semibold flex items-center justify-center gap-2 transition">
                 <i class="fa-solid fa-up-right-from-square"></i> Buka Navigasi Google Maps
             </a>
         </div>
@@ -712,50 +709,39 @@
         </div>
     </div>
 
+    <!-- ================= BACKGROUND MUSIC ================= -->
+    <!-- Memakai file MP4 lokal sebagai sumber audio -->
+    <audio id="bg-music" loop preload="metadata" playsinline>
+        <source src="Shane%20Filan%20-%20Beautiful%20In%20White%20(Official%20Video).mp4" type="audio/mp4">
+        Browser Anda tidak mendukung pemutaran audio.
+    </audio>
+
     <!-- ================= JAVASCRIPT LOGIC ================= -->
     <script>
-        // --- 1. AMBIENT MUSIC SYNTHESIZER (Tone.js) ---
+        // --- 1. BACKGROUND MUSIC (file lokal: Shane Filan - Beautiful In White) ---
+        const bgMusic = document.getElementById('bg-music');
+        bgMusic.volume = 0.6;
         let isMusicPlaying = false;
-        let musicLoop = null;
-        let synth = null;
 
-        async function startAmbientMusic() {
-            try {
-                await Tone.start();
-                if (!synth) {
-                    synth = new Tone.PolySynth(Tone.Synth, {
-                        oscillator: { type: "sine" },
-                        envelope: { attack: 0.8, decay: 1.5, sustain: 0.4, release: 2.5 }
-                    }).toDestination();
-                    synth.volume.value = -16;
-
-                    const chords = [
-                        ["C4", "E4", "G4", "B4"],
-                        ["A3", "C4", "E4", "G4"],
-                        ["F3", "A3", "C4", "E4"],
-                        ["G3", "B3", "D4", "F4"]
-                    ];
-                    let step = 0;
-
-                    musicLoop = new Tone.Loop((time) => {
-                        synth.triggerAttackRelease(chords[step % chords.length], "2n", time);
-                        step++;
-                    }, "1m").start(0);
-                }
-                Tone.Transport.bpm.value = 65;
-                Tone.Transport.start();
-                isMusicPlaying = true;
-                updateMusicUI();
-            } catch (e) {
-                console.warn("Audio memerlukan interaksi pengguna terlebih dahulu.");
+        function startAmbientMusic() {
+            const playPromise = bgMusic.play();
+            if (playPromise !== undefined) {
+                playPromise.then(() => {
+                    isMusicPlaying = true;
+                    updateMusicUI();
+                }).catch((e) => {
+                    console.warn("Musik tidak dapat diputar otomatis:", e);
+                    isMusicPlaying = false;
+                    updateMusicUI();
+                });
             }
         }
 
         function toggleMusic() {
-            if (!isMusicPlaying) {
+            if (bgMusic.paused) {
                 startAmbientMusic();
             } else {
-                Tone.Transport.pause();
+                bgMusic.pause();
                 isMusicPlaying = false;
                 updateMusicUI();
             }
@@ -781,7 +767,7 @@
         }
 
         // --- 3. COUNTDOWN TIMER ---
-        const weddingDate = new Date("2026-12-12T08:00:00+07:00").getTime();
+        const weddingDate = new Date("2026-12-20T08:00:00+07:00").getTime();
 
         function updateCountdown() {
             const now = new Date().getTime();
@@ -826,7 +812,7 @@
 
         // --- 5. SAVE TO GOOGLE CALENDAR ---
         function saveToCalendar() {
-            const url = "https://calendar.google.com/calendar/render?action=TEMPLATE&text=The+Wedding+of+Alya+%26+Reza&dates=20261212T010000Z/20261212T070000Z&details=Acara+Akad+dan+Resepsi+Pernikahan+Alya+Putri+Maharani+%26+Reza+Pratama+Putra&location=Plataran+Senayan+Jakarta";
+            const url = "https://calendar.google.com/calendar/render?action=TEMPLATE&text=The+Wedding+of+Alya+%26+Reza&dates=20261220T010000Z/20261220T070000Z&details=Acara+Akad+dan+Resepsi+Pernikahan+Alya+Putri+Maharani+%26+Reza+Pratama+Putra&location=Plataran+Senayan+Jakarta&ctz=Asia/Jakarta";
             window.open(url, "_blank");
         }
 
